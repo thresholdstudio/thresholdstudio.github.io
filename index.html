@@ -2,67 +2,80 @@
 <html>
   <head>
     <title>Threshold Studio</title>
-	<link rel="icon" type="image/png" href="images/logo.png">
    	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<style>
       html, body {
         height: 100%;
         margin: 0;
 		background-color: #C8C8C8;
-		font-family: 'Roboto', sans-serif; /* specify Roboto as the font family */
+		font-family: 'Roboto', sans-serif;
       }
       .top {
-        text-align: center;
-		letter-spacing: 1px;
-        position: absolute;
-        top: 2vh;
-        width: 100%;
+        padding-top: 2vh;
+		padding-left: 10vh;
+		height:10vh;
       }
       .middle {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
+        text-align: left;
+        top: 20vh;
+        transform: translateY();
+       	padding-top: 10vh;
+		padding-left: 10vh;
+		width: 40%;
+		min-width: 240px;
       }
       .bottom {
-        text-align: center;
-		letter-spacing: 1px;
+        text-align: left;
         position: absolute;
         bottom: 2vh;
-        width: 100%;
+		padding-left: 10vh;
+		width: 40%;
+		min-width: 240px;
       }
-		
 		a {
-			color: black; /* set the link color to blue */
-			text-decoration: none; /* remove the underline */
+			color: #1B1B1B;
+			text-decoration: none; 
+			font-weight: bold;
+
 		}
-		
 		a:hover {
-			color: #F3705D; /* change the link color on hover */
-			text-decoration: none; /* add an underline on hover */
+			color: #F3705D; 
+			text-decoration: none; 
+			font-weight: bold;
 		}
-		
-		img [
-		max-width: 200px; 
-		]
+				
+		img1 {
+			min-width: 240px;
+		}
+		.text {
+			color: #1B1B1B;
+			font-size: 20px;
+		}
+		.emphasis {
+			color: #1B1B1B;
+			font-size: 24px;
+		}		
 		
     </style>
   </head>
   <body>
-	  
-	  <div class="page1">
     <div class="top">
-      <b><a href="about.html">about</a></b>
-    </div>
-    <div class="middle">
-      <img src="images/ThresholdStudio.png" width="50%" alt="Threshold Studio logo"/>
-    </div>
+      <img src="images/ThresholdStudio.png" width="40%" alt=""/></div>
+	  
+  <div class="middle">
+	<p2 class="emphasis"><strong>Threshold Studio specialises in creative, high-quality buildings with an emphasis on simplicity, durability, and sustainability.</strong></p2>
+	<br>
+	<br>
+	<br>
+	<p2 class="text">Threshold Studio is not currently taking on new projects. For current clients or enquiries about past work, <a href="contact.html">send us an email</a>.  </p2>
+
+		
+		
+  </div>
     <div class="bottom">
-      <b><a href="https://www.example.com">contact</a></b>
+      <p>Threshold Studio is located on Wangal Country. We recognise the traditional custodians of the land on which we work, and we pay our respects to Elders past, present and emerging.</p>
+	  <p>© Threshold Studio 2023</p>
+		
     </div>
-	</div>
-
-
-	</body>
+</body>
 </html>
