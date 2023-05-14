@@ -4,133 +4,102 @@
     <title>Threshold Studio</title>
    	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<style>
-      html, body {
+    html, body {
         height: 100%;
         margin: 0;
-		background-color: #C8C8C8;
-		font-family: 'Roboto', sans-serif;
+		background-color: #A4AC86;
+		font-family: 'Barlow', sans-serif;
       }
       .top {
         padding-top: 2vh;
 		padding-left: 10vh;
 		height:10vh;
-      }
-      .middle {
-        text-align: left;
-		padding-bottom: 10vh;
-		padding-left: 10vh;
-		padding-right: 50vh;
-      }
+		width: 100%;
+		max-width: 900px;
+		  color: #414833;
+		}
+		
       .bottom {
         text-align: left;
         position: absolute;
         bottom: 2vh;
 		padding-left: 10vh;
-		width: 40%;
-		min-width: 240px;
-      }
-		a {
-			color: #1B1B1B;
-			text-decoration: none; 
-			font-weight: bold;
-
+		width: 100%;
+		max-width: 900px;
 		}
-		a:hover {
-			color: #F3705D; 
+		
+		a {
+			color: #414833;
 			text-decoration: none; 
-			font-weight: bold;
+			font-weight: 600;
+		}
+		
+		h1 {
+			color: #414833;
+			text-decoration: none; 
+			font-weight: 600;
+			font-size: 96px;
+			letter-spacing: -5px;
+		}
+		h1 {
+			color: #414833;
+			text-decoration: none; 
+			font-weight: 600;
+			font-size: 96px;
+			letter-spacing: -5px;
+		}
+
+
+		a:hover {
+			color: #CC3F0C; 
+			text-decoration: none; 
+			font-weight: 600;
 		}
 				
 		img1 {
 			min-width: 240px;
 		}
+		
 		.text {
 			color: #1B1B1B;
 			font-size: 20px;
 		}
+		
 		.emphasis {
 			color: #1B1B1B;
 			font-size: 24px;
-		}	
-		
-		form {
-		width: 100vw;
-		padding-right: 10vw;
-		}
-		
-		textarea {
-        margin-top: 5px;
-		width: 40%;
-		min-width: 240px;
-        height: 150px;
-        padding: 12px 20px;
-        box-sizing: border-box;
-        border: 0px solid;
-        border-radius: 3px;
-        background-color: #eaeaea;
-        font-size: 16px;
-      }
-		input {
-		width: 40%;
-		min-width: 240px;
-        height: 20px;
-        margin-left: 0px;
-		margin-top: 5px;
-		padding: 12px 20px;
-        box-sizing: border-box;
-        border: 0px solid;
-        border-radius: 3px;
-        background-color: #eaeaea;
-			font-size: 16px;}
-		
-		button[type="submit"] {
-        background-color: #eaeaea;
-        color: F3705D;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-        font-size: 15px;
-		font-weight: bold;
-        display: block;
-      }
-
-			
+		}		
 		
     </style>
-  </head>
-  <body>
-    <div class="top">
-    <img src="images/ThresholdStudio.png" width="200" alt="Threshold Studio"/> </div>
-	  
-    <div class="middle">
-		  <p class="text"><strong>Contact</strong></p>
-    <form action="#" method="POST">
-		<div> 
-		<label for="name">Name</label><br>
-      <input type="text" id="name" name="name" required>
-      <br><br>
-      <label for="email">Email</label><br>
-      <input type="email" id="email" name="email" required>
-      <br><br>
-		</div>
-		
-		
-		
-      <label for="message">Message</label>
-      <br>
-      <textarea id="message" name="message" required></textarea>
-      <br><br>
-      <button type="submit">Send</button>
-    </form>
+</head>
 
-		
-		
-  </div>
+<body>
+    <div class="top">
+    	<h1>threshold studio</h1> 
+		<h2 class="emphasis" style="font-weight: 600;"><span id="word" style="font-weight: 600; font-size: 48px; color: #414833; "></span></h2>
+		<br>
+		<br>
+		<p2 class="text">Threshold Studio is not currently taking on new projects. For current clients or enquiries about past work, <a href="mailto:sam@thresholdstudio.com.au">send us an email</a>.</p2>
+	</div>
+	  
     <div class="bottom">
-      <p>Threshold Studio is located on Wangal Country. We recognise the traditional custodians of the land on which we work, and we pay our respects to Elders past, present and emerging.</p>
-	  <p>© Threshold Studio 2023</p>
-		
+    	<p>Threshold Studio is located on Wangal Country. We recognise the traditional custodians of the land on which we work, and we pay our respects to Elders past, present and emerging.</p>
+		<p>© Threshold Studio 2023</p>
     </div>
-  </body>
+</body>
+
+<script>
+  const words = ["Simplicity.", "Sustainability.", "Durability."]; // an array of words to cycle through
+  let index = 0; // starting index
+  
+  setInterval(() => {
+    // get the span element and set its text content to the current word
+    const wordElement = document.getElementById("word");
+    wordElement.textContent = words[index];
+    
+    // increment the index and wrap around if necessary
+    index = (index + 1) % words.length;
+  }, 2000); // change word every 1 second (1000 milliseconds)
+</script>
+
 </html>
