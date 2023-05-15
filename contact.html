@@ -13,20 +13,22 @@
       }
       .top {
         padding-top: 2vh;
-		padding-left: 10vh;
+		padding-left: 3vw;
 		height:10vh;
-		width: 100%;
+		width: 95%;
 		max-width: 900px;
 		  color: #414833;
 		}
 		
       .bottom {
         text-align: left;
-        position: absolute;
+        position: fixed;
         bottom: 2vh;
-		padding-left: 10vh;
-		width: 100%;
+		padding-left: 3vw;
+		padding-top: 5vh;
+		width: 95%;
 		max-width: 900px;
+		background-color: #A4AC86;
 		}
 		
 		a {
@@ -39,15 +41,15 @@
 			color: #414833;
 			text-decoration: none; 
 			font-weight: 600;
-			font-size: 96px;
-			letter-spacing: -5px;
+			font-size: 72px;
+			letter-spacing: -4px;
+			line-height: 72px;
+
 		}
-		h1 {
-			color: #414833;
+		h2 {
+			color: #414833!important;
 			text-decoration: none; 
 			font-weight: 600;
-			font-size: 96px;
-			letter-spacing: -5px;
 		}
 
 
@@ -77,7 +79,7 @@
 <body>
     <div class="top">
     	<h1>threshold studio</h1> 
-		<h2 class="emphasis" style="font-weight: 600;"><span id="word" style="font-weight: 600; font-size: 48px; color: #414833; "></span></h2>
+		<h2 class="emphasis" style="font-weight: 600; font-size: 36px">Simplicity. Durability. Sustainability.</span></h2>
 		<br>
 		<br>
 		<p2 class="text">Threshold Studio is not currently taking on new projects. For current clients or enquiries about past work, <a href="mailto:sam@thresholdstudio.com.au">send us an email</a>.</p2>
@@ -89,18 +91,5 @@
     </div>
 </body>
 
-<script>
-  const words = ["Simplicity.", "Sustainability.", "Durability."]; // an array of words to cycle through
-  let index = 0; // starting index
-  
-  setInterval(() => {
-    // get the span element and set its text content to the current word
-    const wordElement = document.getElementById("word");
-    wordElement.textContent = words[index];
-    
-    // increment the index and wrap around if necessary
-    index = (index + 1) % words.length;
-  }, 2000); // change word every 1 second (1000 milliseconds)
-</script>
 
 </html>
